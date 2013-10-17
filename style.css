@@ -1,0 +1,152 @@
+/*
+Theme Name:     Anthro
+Theme URI:
+Description:    Anthro Child Theme
+Author:         Carin Handsun
+Author URI:
+Template:       ifeaturepro5
+Version:        1
+*/
+ 
+@import url("../ifeaturepro5/style.css");
+#footer-main-wrapper {
+    background-color: #001E4F;
+}
+#copyright{color:#FFFFFF;}
+
+body.custom-background {
+    background-color: #001E4F;
+}
+.navbar .nav > li > a {
+    color: #777777;
+    float: none;
+    padding: 10px 7px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFFFFF;
+	font-size:1.2em!important;
+}
+.span6{
+	
+	
+	padding:0px 10px;
+	width: 100%;	
+}
+.container-full {
+   background:none!important;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.headd{
+	background-color: #FFF;
+	padding:0px 10px;
+	width: 94%;
+	display:block;
+	height:180px;
+	margin-left:21px;
+		}
+		
+.main-navigation .navbar-inner {
+    background: linear-gradient(to bottom, #54B7F9 0%, #3494D3 1%, #2F84BC 51%, #2875A8 52%, #236390 100%) repeat scroll 0 0 transparent;
+    border-color: #2875A8 #1D567C #1D567C;
+	margin-top:-15px;
+}
+.main-navigation .navbar-inner {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: linear-gradient(to bottom, #B6B6B6 0%, #A4A4A4 1%, #919191 51%, #858585 52%, #717171 100%) repeat scroll 0 0 transparent;
+    border-color: #888888 #666666 #666666;
+    border-image: none;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    min-height: 20px;
+    padding: 0;
+}
+.navbar-inverse .navbar-inner {
+    background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+}
+.navbar-inner {
+    background-color: #FAFAFA;
+    background-image: linear-gradient(to bottom, #FFFFFF, #F2F2F2);
+    background-repeat: repeat-x;
+    border: 1px solid #D4D4D4;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    min-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main-navigation .nav > li.dropdown > a.dropdown-toggle .caret {
+	border-top-color: #ddd;
+	border-bottom-color: #ddd;
+
+}
+.navbar .nav > li > a {
+	color: #efefef;
+	float: none;
+	padding: 10px 7px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #FFFFFF;
+}	
+
+
+body, #wpbody, .form-table .pre, .ui-autocomplete li a {
+    color: #333333;
+}
+body {
+	  font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+    
+    min-width: 600px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#footer-widgets-wrapper {
+    background-color: #001E4F;
+}
+#map{background: url(images/map.jpg);height:470px;width:100%;display:block;position:relative;}
+ #dae{position:absolute;top:230px;right:515px;}
+ .small {font-size:10px;}
+  #shih{position:absolute;top:120px;right:140px;}
+  #brandt{position:absolute;top:190px;right:330px;}
+   #harris{position:absolute;top:370px;right:450px;}
+    #young{position:absolute;top:280px;right:360px;}
+	.spotlight .overlay, .spotlight .overlay a {
+    color: #FFFFFF; font-size:10px;
+}
+
+
+#content h2.entry-title {
+    display:none;
+}
+h3 
+{font-size: 20px;
+
+color: #417CAB!important;
+
+}
+.main-navigation .nav > li > ul > li > ul {
+    background: none repeat scroll 0 0 #236390;
+}
+
+.entry-summary {
+    margin: 0;
+    padding: 8px 20px 10px;
+}
+#sidebar h3.widget-title {
+   
+    color: #FFFFFF!important;
+    font-weight: 100;
+}
+
+

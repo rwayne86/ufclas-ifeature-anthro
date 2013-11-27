@@ -5,7 +5,7 @@ Description:    Anthro Child Theme
 Author:         Carin Handsun
 Author URI:		
 Template:       ifeaturepro5
-Version:        1.0.1
+Version:        1.0.2
 */
  
 @import url("../ifeaturepro5/style.css");
@@ -124,7 +124,38 @@ html, body {
 	.spotlight .overlay, .spotlight .overlay a {
     color: #FFFFFF; font-size:10px;
 }
-
+#map .overlay {
+	background-color: rgba(0,0,0,0.7);
+	width: 100px;
+	color: #fff;
+	font-size: 11px;
+	padding: 7px;
+	-webkit-hyphens: auto;
+   	-moz-hyphens: auto;
+    hyphens: auto;
+	position: relative;
+	top: -90px;
+	left: 90px;
+	min-height: 70px;
+	opacity: 0;
+    visibility: none;
+}
+#map img:hover + .overlay, #map .overlay:hover {
+	-webkit-transition: all .25s ease-out;
+       -moz-transition: all .25s ease-out;
+        -ms-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+	-moz-transform: translateX(-90px) ;
+	-webkit-transform: translateX(-90px);
+	-o-transform: translateX(-90px);
+	-ms-transform: translateX(-90px);
+	transform: translateX(-90px);
+	opacity: 1;
+    visibility: visible;
+	color: #fff;
+	text-decoration: none;
+}
 
 #content h2.entry-title {
     display:none;

@@ -5,7 +5,7 @@ Description:    Anthro Child Theme
 Author:         Carin Handsun
 Author URI:		
 Template:       ifeaturepro5
-Version:        1.0.2
+Version:        1.0.3
 */
  
 @import url("../ifeaturepro5/style.css");
@@ -139,24 +139,30 @@ html, body {
 	min-height: 70px;
 	opacity: 0;
     visibility: none;
+	z-index: 9999;
 }
-#map img:hover + .overlay, #map .overlay:hover {
+#map img:hover + .overlay {
 	-webkit-transition: all .25s ease-out;
        -moz-transition: all .25s ease-out;
         -ms-transition: all .25s ease-out;
          -o-transition: all .25s ease-out;
             transition: all .25s ease-out;
-	-moz-transform: translateX(-90px) ;
-	-webkit-transform: translateX(-90px);
-	-o-transform: translateX(-90px);
-	-ms-transform: translateX(-90px);
-	transform: translateX(-90px);
+	-moz-transform: translateY(-10px) ;
+	-webkit-transform: translateY(-10px);
+	-o-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	transform: translateY(-10px);
 	opacity: 1;
     visibility: visible;
 	color: #fff;
 	text-decoration: none;
 }
-
+#map .overlay,
+#map .overlay:hover,
+#map .overlay:active {
+	text-decoration: none !important;
+	border: none !important;
+}
 #content h2.entry-title {
     display:none;
 }
@@ -175,9 +181,6 @@ color: #417CAB!important;
     padding: 8px 20px 10px;
 }
 #sidebar h3.widget-title {
-   
-    color: #FFFFFF!important;
+    color: #FFFFFF !important;
     font-weight: 100;
 }
-
-

@@ -58,7 +58,7 @@
       	<div class="span6">
         	<div class="top-head-description">
         		 <div id="logo">
-					<a href="http://ufl.edu/" title="Home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/uf.png"/></a><a href="http://www.clas.ufl.edu/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/anthro.png"/></a><form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url('/'); ?>">
+					<a href="http://ufl.edu/" title="Home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/uf.png"/></a><a href="http://anthro.ufl.edu/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/anthro.png"/></a><form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url('/'); ?>">
 				<div>
 					<label class="screen-reader-text" for="s">Search for:</label>
 					<input type="text" value="" name="s" id="s" />
@@ -69,7 +69,7 @@
         </div>
        
         <div class="top-head-social span6">
-        <div style="height:94px;padding-top:10px;"><a href="mailto:rwayne86@ufl.edu?subject:UF Anthro Site"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mail.png" width="134" height="94" /></a><a href="<?php echo home_url(); ?>/?page_id=604"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar.png" width="134" height="94" /></a><a href="<?php echo home_url(); ?>/?page_id=627"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/contents.png" width="134" height="94" /></a></div>
+        <div style="height:94px;padding-top:10px;"><a href="/?p=2034"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mail.png" width="134" height="94" /></a><a href="<?php echo home_url(); ?>/?page_id=604"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar.png" width="134" height="94" /></a><a href="<?php echo home_url(); ?>/?page_id=627"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/contents.png" width="134" height="94" /></a></div>
         	
         </div>
         </div>

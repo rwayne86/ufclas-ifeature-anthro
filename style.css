@@ -1,11 +1,10 @@
 /*
 Theme Name:     iFeature Anthro
-Theme URI:		
-Description:    Anthro Child Theme
+Theme URI:		http://it.clas.ufl.edu/
+Description:    Custom template for Department of Anthropology. Child theme of iFeaturePro 5. Maintained by UF CLAS IT.
 Author:         Carin Handsun
-Author URI:		
 Template:       ifeaturepro5
-Version:        1.0.5
+Version:        1.0.6
 */
  
 @import url("../ifeaturepro5/style.css");
@@ -183,4 +182,33 @@ color: #417CAB!important;
 #sidebar h3.widget-title {
     color: #FFFFFF !important;
     font-weight: 100;
+}
+
+#header-right {
+	max-height:100px;
+	padding-top:10px;
+	overflow: hidden;
+}
+#header-right h2.widgettitle {
+	display: none;
+}
+#header-right ul, #header-right li {
+	margin: 0;
+	list-style: none;
+	display: block;
+}
+#header-right .widget_links li {
+	width: 134px;
+	float: left;
+	text-align: center;
+}
+#header-right .widget_links li a:link,
+#header-right .widget_links li a:visited {
+	font-size: 11px;
+	font-weight: bold;
+	color: #000;
+}
+#header-right .widget_links img {
+	display: block;
+	margin-bottom: -16px;
 }

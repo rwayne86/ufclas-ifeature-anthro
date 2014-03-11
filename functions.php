@@ -11,3 +11,18 @@ function ufclas_add_script(){
 	<![endif]-->';
 }
 add_action('wp_print_styles', 'ufclas_add_script');
+
+// Register Header Right Sidebar
+function ufclas_header_right_sidebar() {
+
+	$args = array(
+		'id'            => 'header-right',
+		'name'          => __( 'Header Right', 'ufclas' ),
+		'description'   => __( 'Widgets will appear in the header right', 'ufclas' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+	);
+	register_sidebar( $args );
+
+}
+add_action( 'widgets_init', 'ufclas_header_right_sidebar' );

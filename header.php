@@ -69,8 +69,13 @@
         </div>
        
         <div class="top-head-social span6">
-        <div style="height:94px;padding-top:10px;"><a href="/?p=2034"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mail.png" width="134" height="94" /></a><a href="<?php echo home_url(); ?>/?page_id=604"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/calendar.png" width="134" height="94" /></a><a href="<?php echo home_url(); ?>/courses-current-semester/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/contents.png" width="134" height="94" /></a></div>
-        	
+		<!-- start header-right widgets -->
+		<?php if ( is_active_sidebar( 'header-right' ) ) : ?>
+			<div id="header-right">
+			<?php dynamic_sidebar( 'header-right' ); ?>
+			</div>
+		<?php endif; ?>
+        <!-- end header-right -->
         </div>
         </div>
         </div>

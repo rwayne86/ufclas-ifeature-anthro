@@ -4,7 +4,7 @@ Theme URI:		http://it.clas.ufl.edu/
 Description:    Custom template for Department of Anthropology. Child theme of iFeaturePro 5. Maintained by UF CLAS IT.
 Author:         Carin Handsun
 Template:       ifeaturepro5
-Version:        1.0.6
+Version:        1.0.7
 */
  
 @import url("../ifeaturepro5/style.css");
@@ -162,9 +162,7 @@ html, body {
 	text-decoration: none !important;
 	border: none !important;
 }
-#content h2.entry-title {
-    display:none;
-}
+
 h3 
 {font-size: 20px;
 

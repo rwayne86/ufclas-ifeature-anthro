@@ -26,3 +26,33 @@ function ufclas_header_right_sidebar() {
 
 }
 add_action( 'widgets_init', 'ufclas_header_right_sidebar' );
+
+
+// Customize page titles with Page titles first instead of site name
+function ufclas_site_title( $title ){
+ 	global $page, $paged;
+	
+	$sep = ' » ';
+	$site_description = get_bloginfo( 'description' );
+	$site_organization = __('University of Florida', 'ufclas');
+	
+	// Custom title for the home page
+	if( empty( $title ) && ( is_home() || is_front_page() ) ) {
+		return get_bloginfo( 'name' ) . $sep . get_bloginfo( 'description' ) . $sep . $site_organization;
+	}
+	
+	// Custom title for everything else
+	$filtered_title = $title . $sep . get_bloginfo( 'name' );
+	$filtered_title .= ( 2 <= $paged || 2 <= $page ) ? $sep . sprintf( __( 'Page %s' ), max( $paged, $page ) ) : '';
+	$filtered_title .=  $sep . $site_organization;
+	
+	return $filtered_title;
+}
+
+add_filter('wp_title', 'ufclas_site_title');
+
+// Remove the parent theme filter
+function ufclas_remove_default_site_title() {
+	remove_filter( 'wp_title', 'cyberchimps_default_site_title', 10, 3 );
+}
+add_action( 'init', 'ufclas_remove_default_site_title' );

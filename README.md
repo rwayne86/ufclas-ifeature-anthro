@@ -11,7 +11,7 @@ Template:       ifeaturepro5
 
 Changelog
 ----------
-
+* [1.0.8] Fixed missing page titles
 * [1.0.7] Removes styles to hide page titles
 * [1.0.6] Adds ability to update header links in header right sidebar
 * [1.0.5] Updates header current courses list 
@@ -27,5 +27,4 @@ Documentation
 
 To-Do
 ------
-* Page titles do not appear in the <title> tag
 * Fix responsive styles

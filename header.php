@@ -58,13 +58,16 @@
       	<div class="span6">
         	<div class="top-head-description">
         		 <div id="logo">
-					<a href="http://ufl.edu/" title="Home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/uf.png"/></a><a href="http://anthro.ufl.edu/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/anthro.png"/></a><form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url('/'); ?>">
+					<!-- <a href="http://ufl.edu/" title="Home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/uf.png"/></a><a href="http://anthro.ufl.edu/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/anthro.png"/></a> -->
+					<?php ufclas_cyberchimps_logo(); ?>
+				</div>
+			<form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url('/'); ?>">
 				<div>
 					<label class="screen-reader-text" for="s">Search for:</label>
 					<input type="text" value="" name="s" id="s" />
 					<input type="submit" id="searchsubmit" value="Search" />
 				</div>
-			</form>				</div>
+			</form>				
           </div>
         </div>
        
@@ -89,8 +92,6 @@
 
 <div id="wrapper" class="container-fluid">	
 	
-	
-
 	<nav id="navigation" role="navigation">
       <div class="main-navigation navbar navbar-inverse">
         <div class="navbar-inner">

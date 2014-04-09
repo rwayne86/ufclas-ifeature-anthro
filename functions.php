@@ -32,7 +32,7 @@ add_action( 'widgets_init', 'ufclas_header_right_sidebar' );
 function ufclas_site_title( $title ){
  	global $page, $paged;
 	
-	$sep = ' » ';
+	$sep = ' ï¿½ ';
 	$site_description = get_bloginfo( 'description' );
 	$site_organization = __('University of Florida', 'ufclas');
 	
@@ -56,3 +56,13 @@ function ufclas_remove_default_site_title() {
 	remove_filter( 'wp_title', 'cyberchimps_default_site_title', 10, 3 );
 }
 add_action( 'init', 'ufclas_remove_default_site_title' );
+
+//Add meta data to posts
+function ufclas_the_post {
+
+if( have_posts() ) : while ( have_posts() ) : the_post();
+echo '
+'Posted on the_time('F jS, Y'); ?>  in <?php the_category(', '); 
+'
+}
+add_filter('wp_post', 'ufclas_the_post')
